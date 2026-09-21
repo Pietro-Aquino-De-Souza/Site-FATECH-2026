@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FATECH | Colégio Mendes Gonçalves</title>
+  <meta name="description" content="Feira FATECH do Colégio Mendes Gonçalves: 08 e 09 de outubro , em Guaíra - PR.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700;800&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="https://fatechmendes.com/assets/img/navbar-logo.png" alt="FATECH" onerror="this.replaceWith(document.createTextNode('FATECH'))">
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav class="nav" id="menu" aria-label="Principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="cronograma.html">Cronograma</a></li>
+          <li><a href="inscricao.html">Inscrição</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- Introdução + cronômetro -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Bem-vindo à FATECH!</h1>
+          <p class="lead">Venha fazer parte dessa história incrível. Sua presença é uma honra.</p>
+          <p class="data-selo">08 e 09 de outubro</p>
+        </div>
+
+        <div class="painel-contagem">
+          <p id="contagem-titulo">Faltam para a abertura, 08/10 às 19:30</p>
+          <div class="contagem" role="timer">
+            <div class="tile"><span class="num" id="cd-dias">00</span><span class="rot">dias</span></div>
+            <div class="tile"><span class="num" id="cd-horas">00</span><span class="rot">horas</span></div>
+            <div class="tile"><span class="num" id="cd-min">00</span><span class="rot">min</span></div>
+            <div class="tile"><span class="num" id="cd-seg">00</span><span class="rot">seg</span></div>
+          </div>
+          <a class="btn" href="cronograma.html">Ver cronograma</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- O que é a FATECH -->
+    <section class="secao">
+      <div class="container intro-grid">
+        <div>
+          <h2>O que é a FATECH?</h2>
+          <p>A FATECH é a feira do Colégio Mendes Gonçalves. Ela aproxima a escola da comunidade: alunos, famílias, empresas e visitantes se encontram para trocar ideias e conhecer soluções que fazem diferença na região.</p>
+          <p>Os alunos dos cursos de Desenvolvimento de Sistemas e de Administração apresentam trabalhos que unem tecnologia, pesquisa e criatividade. É aprendizado na prática e valorização do esforço de cada turma.</p>
+          <p>O objetivo é aproximar o ensino técnico da comunidade e mostrar como uma educação voltada para o futuro transforma quem estuda.</p>
+        </div>
+
+        <aside class="horarios" aria-labelledby="prog">
+          <h3 id="prog">Programação</h3>
+          <dl>
+            <dt>08/10</dt>
+            <dd>19:30, abertura para o público</dd>
+            <dt>09/10</dt>
+            <dd>
+              Recepção para as escolas durante o dia
+              <ul>
+                <li>Manhã: 08:30 às 11:30</li>
+                <li>Tarde: 14:00 às 16:30</li>
+                <li>Noite: 19:30 às 22:00, aberto ao público</li>
+              </ul>
+            </dd>
+          </dl>
+          <p class="local"><strong>Colégio Mendes Gonçalves</strong><br>R. Francisco Murtinho, 656 - Centro, Guaíra - PR</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Carrossel -->
+    <section class="secao secao-tint">
+      <div class="container">
+        <div class="secao-titulo">
+          <h2>Conheça alguns projetos</h2>
+          <p>A cada visita mostramos uma seleção diferente. Para ver todos, abra a página de projetos.</p>
+        </div>
+
+        <div class="carrossel" id="carrossel" role="region" aria-roledescription="carrossel" aria-label="Projetos da FATECH">
+          <div class="carrossel-janela">
+            <div class="pista" id="pista"></div>
+          </div>
+          <div class="carrossel-controles">
+            <button class="seta" id="anterior" type="button" aria-label="Projeto anterior">&#8249;</button>
+            <div class="pontos" id="pontos"></div>
+            <button class="seta" id="proximo" type="button" aria-label="Próximo projeto">&#8250;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alunos responsáveis -->
+    <section class="secao">
+      <div class="container">
+        <div class="secao-titulo">
+          <h2>Alunos responsáveis pelo projeto</h2>
+          <p>Quem organiza e desenvolve a FATECH.</p>
+        </div>
+
+        <div class="grade-alunos">
+          <article class="aluno">
+            <div class="avatar" aria-hidden="true">PA</div>
+            <h3>Pietro de Souza Aquino</h3>
+            <p>Desenvolvimento de Sistemas. Criação, concepção e desenvolvimento do site.</p>
+          </article>
+          <article class="aluno">
+            <div class="avatar" aria-hidden="true">DA</div>
+            <h3>Davi Apolinario Martins</h3>
+            <p>Desenvolvimento de Sistemas. Desenvolvimento do site e Gestão de Design</p>
+          </article>
+          <article class="aluno">
+            <div class="avatar" aria-hidden="true">GL</div>
+            <h3>Guilherme </h3>
+            <p>Desenvolvimento de Sistemas. Desenvolvimento do site</p>
+          </article>
+          <article class="aluno aluno-prof">
+            <div class="avatar" aria-hidden="true">AD</div>
+            <h3>Alexandre Manoel Krug Dias</h3>
+            <p class="cargo">Professor coordenador</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>FATECH</h2>
+        <p>Feira do Colégio Mendes Gonçalves. Alunos de Desenvolvimento de Sistemas e de Administração apresentam projetos que unem tecnologia, criatividade e impacto social.</p>
+      </div>
+      <div>
+        <h3>Onde fica</h3>
+        <p>Colégio Mendes Gonçalves<br>R. Francisco Murtinho, 656 - Centro<br>Guaíra - PR, 85980-000</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=Col%C3%A9gio+Mendes+Gon%C3%A7alves+Gua%C3%ADra+PR" target="_blank" rel="noopener">Ver no mapa</a></p>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p><a href="mailto:mendesfatech@gmail.com">mendesfatech@gmail.com</a><br><a href="tel:+5544991670633">(44) 99167-0633</a></p>
+        <p><a href="https://www.instagram.com/fatechmendes/" target="_blank" rel="noopener">Instagram</a> &nbsp; <a href="https://www.facebook.com/mendes.goncalves.520/" target="_blank" rel="noopener">Facebook</a></p>
+      </div>
+    </div>
+    <div class="container">
+      <p class="copy">&copy; <span id="ano">2026</span> Feira FaTech - Colégio Mendes Gonçalves. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/dados.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
