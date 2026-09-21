@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos | FATECH</title>
+  <meta name="description" content="Conheça todos os projetos que estarão na FATECH.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700;800&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="https://fatechmendes.com/assets/img/navbar-logo.png" alt="FATECH" onerror="this.replaceWith(document.createTextNode('FATECH'))">
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav class="nav" id="menu" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="cronograma.html">Cronograma</a></li>
+          <li><a href="inscricao.html">Inscrição</a></li>
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="pagina-topo">
+      <div class="container">
+        <h1>Projetos</h1>
+        <p>Cada projeto é resultado de estudo, criatividade e trabalho em equipe dos nossos alunos. Veja o que vai estar na feira.</p>
+      </div>
+    </section>
+
+    <section class="secao secao-tint" style="border-top:0">
+      <div class="container">
+        <!-- Os cards são criados pelo js/script.js a partir da lista PROJETOS em js/dados.js -->
+        <div class="grade-proj" id="lista-projetos"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>FATECH</h2>
+        <p>Feira do Colégio Mendes Gonçalves. Alunos de Desenvolvimento de Sistemas e de Administração apresentam projetos que unem tecnologia, criatividade e impacto social.</p>
+      </div>
+      <div>
+        <h3>Onde fica</h3>
+        <p>Colégio Mendes Gonçalves<br>R. Francisco Murtinho, 656 - Centro<br>Guaíra - PR, 85980-000</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=Col%C3%A9gio+Mendes+Gon%C3%A7alves+Gua%C3%ADra+PR" target="_blank" rel="noopener">Ver no mapa</a></p>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p><a href="mailto:mendesfatech@gmail.com">mendesfatech@gmail.com</a><br><a href="tel:+5544991670633">(44) 99167-0633</a></p>
+        <p><a href="https://www.instagram.com/fatechmendes/" target="_blank" rel="noopener">Instagram</a> &nbsp; <a href="https://www.facebook.com/mendes.goncalves.520/" target="_blank" rel="noopener">Facebook</a></p>
+      </div>
+    </div>
+    <div class="container">
+      <p class="copy">&copy; <span id="ano">2026</span> Feira FaTech - Colégio Mendes Gonçalves. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/dados.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

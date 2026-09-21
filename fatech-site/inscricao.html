@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inscrição | FATECH</title>
+  <meta name="description" content="Inscreva sua equipe na FATECH ou fale com o professor coordenador.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700;800&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">
+        <img src="https://fatechmendes.com/assets/img/navbar-logo.png" alt="FATECH" onerror="this.replaceWith(document.createTextNode('FATECH'))">
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav class="nav" id="menu" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="cronograma.html">Cronograma</a></li>
+          <li><a href="inscricao.html" aria-current="page">Inscrição</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="pagina-topo">
+      <div class="container">
+        <h1>Inscrição</h1>
+        <p>Inscreva sua equipe na FATECH preenchendo o formulário ou fale direto com o professor coordenador.</p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container-estreito">
+
+        <div class="abas">
+          <button class="aba" type="button" data-painel="painel-form" aria-controls="painel-form" aria-pressed="true">Formulário de inscrição</button>
+          <button class="aba" type="button" data-painel="painel-contato" aria-controls="painel-contato" aria-pressed="false">Contato</button>
+        </div>
+
+        <!-- Aba 1: formulário -->
+        <div class="painel" id="painel-form">
+          <form id="form-inscricao">
+            <h2>Dados da equipe</h2>
+            <p>Preencha os campos abaixo. Ao enviar, você confere os dados e envia a inscrição pelo WhatsApp do professor coordenador.</p>
+
+            <div class="form-grid">
+              <div>
+                <label for="equipe">Nome da equipe</label>
+                <input type="text" id="equipe" name="equipe" required autocomplete="off">
+              </div>
+              <div>
+                <label for="lider">Líder da equipe</label>
+                <input type="text" id="lider" name="lider" required autocomplete="name">
+              </div>
+              <div>
+                <label for="responsavel">Responsável/Professor da equipe</label>
+                <input type="text" id="responsavel" name="responsavel" required autocomplete="off">
+              </div>
+              <div>
+                <label for="robo">Nome do robô</label>
+                <input type="text" id="robo" name="robo" required autocomplete="off">
+              </div>
+              <div class="campo-largo">
+                <label for="logo">Logo da equipe <span class="opcional">(opcional)</span></label>
+                <input type="file" id="logo" name="logo" accept="image/*">
+                <img id="logo-preview" alt="Pré-visualização do logo da equipe" hidden>
+              </div>
+            </div>
+
+            <div class="form-acoes">
+              <button class="btn" type="submit">Revisar inscrição</button>
+            </div>
+          </form>
+
+          <!-- Resumo mostrado depois de preencher -->
+          <div id="resumo" hidden>
+            <h2>Confira os dados</h2>
+            <dl class="resumo-lista" id="resumo-lista"></dl>
+            <p class="aviso">A inscrição só é concluída depois que você enviar esta mensagem ao professor pelo WhatsApp.</p>
+            <div class="form-acoes">
+              <a class="btn" id="enviar-whatsapp" href="#" target="_blank" rel="noopener">Enviar pelo WhatsApp</a>
+              <button class="btn btn-branco" id="corrigir" type="button">Corrigir dados</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aba 2: contato -->
+        <div class="painel" id="painel-contato" hidden>
+          <h2>Fale com o professor coordenador</h2>
+          <p>Tire dúvidas sobre a feira ou faça sua inscrição diretamente pelo WhatsApp.</p>
+          <p class="contato-prof" id="nome-professor"></p>
+          <a class="btn" id="botao-contato" href="#" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>FATECH</h2>
+        <p>Feira do Colégio Mendes Gonçalves. Alunos de Desenvolvimento de Sistemas e de Administração apresentam projetos que unem tecnologia, criatividade e impacto social.</p>
+      </div>
+      <div>
+        <h3>Onde fica</h3>
+        <p>Colégio Mendes Gonçalves<br>R. Francisco Murtinho, 656 - Centro<br>Guaíra - PR, 85980-000</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=Col%C3%A9gio+Mendes+Gon%C3%A7alves+Gua%C3%ADra+PR" target="_blank" rel="noopener">Ver no mapa</a></p>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p><a href="mailto:mendesfatech@gmail.com">mendesfatech@gmail.com</a><br><a href="tel:+5544991670633">(44) 99167-0633</a></p>
+        <p><a href="https://www.instagram.com/fatechmendes/" target="_blank" rel="noopener">Instagram</a> &nbsp; <a href="https://www.facebook.com/mendes.goncalves.520/" target="_blank" rel="noopener">Facebook</a></p>
+      </div>
+    </div>
+    <div class="container">
+      <p class="copy">&copy; <span id="ano">2026</span> Feira FaTech - Colégio Mendes Gonçalves. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/dados.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
