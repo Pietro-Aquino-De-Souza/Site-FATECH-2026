@@ -8,7 +8,6 @@ const CONFIG = {
   dataInicio: "2026-10-08T19:00:00-03:00",
 
   // WhatsApp do professor coordenador: 55 + DDD + número, só dígitos
-  // ATENÇÃO: troque pelo número do professor. Este é o telefone de contato do site original.
   whatsapp: "554497379403",
 
   professor: "Alexandre Manoel Krug Dias",
