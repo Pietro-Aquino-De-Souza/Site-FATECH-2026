@@ -74,32 +74,32 @@ const PROJETOS = [
     imagem: "img/achadoseperdidos.jpeg"
   },
   {
-    nome: "COLOQUE O NOME DO PROJETO AQUI",
-    alunos: "COLOQUE O NOME DO ALUNO AQUI",
-    tema: "COLOQUE O TEMA DO PROJETO AQUI",
-    resumo: LOREM,
-    imagem: ""
+    nome: "Senha Segura",
+    alunos: "Igor",
+    tema: "Tecnologia e Inovação",
+    resumo: "O projeto Senha Segura é uma aplicação educativa que ensina como criar senhas mais fortes e proteger melhor as informações no ambiente digital.",
+    imagem: "img/senha-segura.jpeg"
   },
   {
-    nome: "COLOQUE O NOME DO PROJETO AQUI",
-    alunos: "COLOQUE O NOME DO ALUNO AQUI",
-    tema: "COLOQUE O TEMA DO PROJETO AQUI",
-    resumo: LOREM,
-    imagem: ""
+    nome: "AGROBÃO",
+    alunos: "Guilherme Menegazzi Gobetti",
+    tema: "Tecnologia e Inovaçãos",
+    resumo: "'AGROBÃO' é um projeto que visa criar um sistema de prevenção climatica focada no agronegócio, ajudando a proteger suas colheitas e otimizar a produção.",
+    imagem: "img/agrobao.jpeg"
   },
   {
-    nome: "COLOQUE O NOME DO PROJETO AQUI",
-    alunos: "COLOQUE O NOME DO ALUNO AQUI",
-    tema: "COLOQUE O TEMA DO PROJETO AQUI",
-    resumo: LOREM,
-    imagem: ""
+    nome: "Organização da Competição de Robótica",
+    alunos: "Emilly Ito",
+    tema: "Tecnologia e competição",
+    resumo: "Este projeto visa organizar e coordenar a competição de robótica da escola, garantindo uma experiência divertida e educativa para todos os participantes.",
+    imagem: "img/competicao-robotica.jpeg"
   },
   {
-    nome: "COLOQUE O NOME DO PROJETO AQUI",
-    alunos: "COLOQUE O NOME DO ALUNO AQUI",
-    tema: "COLOQUE O TEMA DO PROJETO AQUI",
-    resumo: LOREM,
-    imagem: ""
+    nome: "Comunicação OFF GRID",
+    alunos: "Guilherme Alves Sella da Silva",
+    tema: "Tecnologia e Inovação",
+    resumo: "Explicar como funciona a comunicação off grid e demonstrar sua aplicação por meio de tecnologias de rádio, LoRa e redes mesh, utilizando o Mesh Core como exemplo.",
+    imagem: "img/sistema-de-energia-solar-off-grid.jpeg"
   },
   {
     nome: "COLOQUE O NOME DO PROJETO AQUI",
