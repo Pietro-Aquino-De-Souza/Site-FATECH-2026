@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Inscrição | FATECH</title>
   <meta name="description" content="Inscreva sua equipe na FATECH ou fale com o professor coordenador.">
-  <link rel="icon" href="img/Logo-fatech.jpg">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700;800&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
@@ -35,7 +35,7 @@
     <section class="pagina-topo">
       <div class="container">
         <h1>Inscrição</h1>
-        <p>Inscreva sua equipe na competição de Robotica, preenchendo o formulário ou fale direto com o professor coordenador.</p>
+        <p>Inscreva sua equipe na Competição de Robótica preenchendo o formulário e fale direto com o professor coordenador.</p>
       </div>
     </section>
 
@@ -51,37 +51,23 @@
         <div class="painel" id="painel-form">
           <form id="form-inscricao">
             <h2>Dados da equipe</h2>
-            <p>Preencha os campos abaixo. Ao enviar, você confere os dados e envia a inscrição pelo WhatsApp do professor coordenador.</p>
+            <p>Segue o link abaixo do formulario de inscrição</p>
 
-            <div class="form-grid">
-              <div>
-                <label for="equipe">Nome da equipe</label>
-                <input type="text" id="equipe" name="equipe" required autocomplete="off">
-              </div>
-              <div>
-                <label for="lider">Líder da equipe</label>
-                <input type="text" id="lider" name="lider" required autocomplete="name">
-              </div>
-              <div>
-                <label for="responsavel">Responsável/Professor da equipe</label>
-                <input type="text" id="responsavel" name="responsavel" required autocomplete="off">
-              </div>
-              <div>
-                <label for="robo">Nome do robô</label>
-                <input type="text" id="robo" name="robo" required autocomplete="off">
-              </div>
-              <div class="campo-largo">
-                <label for="logo">Logo da equipe <span class="opcional">(opcional)</span></label>
-                <input type="file" id="logo" name="logo" accept="image/*">
-                <img id="logo-preview" alt="Pré-visualização do logo da equipe" hidden>
-              </div>
-            </div>
+            <ul class="lista-dados-inscricao">
+              <li>Nome do Colégio</li>
+              <li>Email do Responsável</li>
+              <li>Professor Responsavel</li>
+              <li>Telefone do responsável</li>
+              <li>Modalidade</li>
+              <li>Nome do Robô</li>
+              <li>Aluno Capitão</li>
+              <li>Nome dos demais integrantes (Max de 3)</li>
+            </ul>
+            
+            <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfHpysUblO_tVsMyvlYrx904wX-v9YFipuRUOENdFgKJA0c0Q/viewform" target="_blank" rel="noopener">Preencher formulário de inscrição</a>
 
-            <div class="form-acoes">
-              <button class="btn" type="submit">Revisar inscrição</button>
-            </div>
-          </form>
-
+            <p class="link-regulamento"><a id="link-regulamento" href="#" target="_blank" rel="noopener">Ler o regulamento da Competição de Robótica (PDF)</a></p>
+            
           <!-- Resumo mostrado depois de preencher -->
           <div id="resumo" hidden>
             <h2>Confira os dados</h2>
@@ -100,8 +86,8 @@
           <p>Tire dúvidas sobre a feira ou faça sua inscrição diretamente pelo WhatsApp.</p>
           <p class="contato-prof" id="nome-professor"></p>
           <a class="btn" id="botao-contato" href="#" target="_blank" rel="noopener">Chamar no WhatsApp</a>
-        </div>
 
+        </div>
       </div>
     </section>
   </main>

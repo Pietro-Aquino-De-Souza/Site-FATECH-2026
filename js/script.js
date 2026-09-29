@@ -161,7 +161,7 @@ if (listaProjetos) {
     corpo.appendChild(criar("h3", "", projeto.nome));
 
     const alunos = criar("p", "alunos");
-    alunos.appendChild(criar("strong", "", "Alunos responsáveis:"));
+    alunos.appendChild(criar("strong", "", "Aluno responsável: "));
     alunos.appendChild(document.createTextNode(projeto.alunos));
     corpo.appendChild(alunos);
 
@@ -202,7 +202,10 @@ if (formInscricao) {
   const botaoContato = document.getElementById("botao-contato");
   botaoContato.href = linkWhatsapp("Olá, professor " + primeiroNome + "! Tenho uma dúvida sobre a FATECH.");
   document.getElementById("link-regulamento").href = CONFIG.regulamento;
-
+  document.getElementById("link-formulario").href = CONFIG.formulario;
+  const botaoFormulario = document.getElementById("botao-formulario");
+  botaoFormulario.href = CONFIG.formulario;
+  
   // Pré-visualização do logo
   campoLogo.addEventListener("change", () => {
     const arquivo = campoLogo.files[0];

@@ -539,6 +539,41 @@ h3 { font-size: 1.15rem; }
 .painel > p,
 .painel form > p { margin-bottom: 1.5rem; }
 
+.lista-dados-inscricao {
+  list-style: none;
+  display: grid;
+  gap: .8rem;
+  margin: 1rem 0 1.5rem;
+  padding: 0;
+}
+.lista-dados-inscricao li {
+  position: relative;
+  background: var(--ciano-claro);
+  border: 2px solid var(--preto);
+  border-radius: 12px;
+  padding: .8rem 1rem .8rem 2.8rem;
+  box-shadow: 3px 3px 0 var(--preto);
+  font-weight: 700;
+  line-height: 1.4;
+}
+.lista-dados-inscricao li::before {
+  content: "✓";
+  position: absolute;
+  left: .8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  background: var(--laranja);
+  border: 2px solid var(--preto);
+  font-size: .8rem;
+  font-weight: 900;
+}
+
 .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
 .campo-largo { grid-column: 1 / -1; }
 label { display: block; font-weight: 800; margin-bottom: .3rem; }
