@@ -115,11 +115,11 @@ const PROJETOS = [
     resumo: "O projeto busca calcular o índice de massa corporal e fazer uma tabela indicando o nível de saúde de uma pessoa, quais sãos",
     imagem: "img/tabela-imc.jpeg"
   },
-  {
-    nome: "COLOQUE O NOME DO PROJETO AQUI",
-    alunos: "COLOQUE O NOME DO ALUNO AQUI",
-    tema: "COLOQUE O TEMA DO PROJETO AQUI",
-    resumo: LOREM,
-    imagem: ""
-  }
+  //{
+  //  nome: "COLOQUE O NOME DO PROJETO AQUI",
+  //  alunos: "COLOQUE O NOME DO ALUNO AQUI",
+  //  tema: "COLOQUE O TEMA DO PROJETO AQUI",
+  //  resumo: LOREM,
+  //  imagem: ""
+  //}
 ];
