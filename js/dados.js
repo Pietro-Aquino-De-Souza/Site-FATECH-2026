@@ -102,18 +102,18 @@ const PROJETOS = [
     imagem: "img/sistema-de-energia-solar-off-grid.jpeg"
   },
   {
-    nome: "COLOQUE O NOME DO PROJETO AQUI",
-    alunos: "COLOQUE O NOME DO ALUNO AQUI",
-    tema: "COLOQUE O TEMA DO PROJETO AQUI",
-    resumo: LOREM,
-    imagem: ""
+    nome: "Casa inteligente",
+    alunos: "Felipe Falci",
+    tema: "Tecnologia e Inovação",
+    resumo: "O projeto tem como objetivo demonstrar o funcionamento de recursos como um varais e janelas janelas que se recolhe automaticamente quando detecta chuva e iluminação que pode ser acionada por meio de um dispositivo remoto.",
+    imagem: "img/casa-inteligente.jpeg"
   },
   {
-    nome: "COLOQUE O NOME DO PROJETO AQUI",
-    alunos: "COLOQUE O NOME DO ALUNO AQUI",
-    tema: "COLOQUE O TEMA DO PROJETO AQUI",
-    resumo: LOREM,
-    imagem: ""
+    nome: "Calculadora IMC",
+    alunos: "Thays Rodrigues",
+    tema: "Tecnologia e Automação",
+    resumo: "O projeto busca calcular o índice de massa corporal e fazer uma tabela indicando o nível de saúde de uma pessoa, quais sãos",
+    imagem: "img/tabela-imc.jpeg"
   },
   {
     nome: "COLOQUE O NOME DO PROJETO AQUI",
