@@ -122,7 +122,7 @@ if (pista) {
 
     info.appendChild(criar("p", "", projeto.resumo));
 
-    const link = criar("a", "btn btn-pequeno", "Ver todos os projetos");
+    const link = criar("a", "btn btn-pequeno", "Ver todos");
     link.href = "projetos.html";
     info.appendChild(link);
 

@@ -28,21 +28,21 @@ const PROJETOS = [
     nome: "Impressora 3D",
     alunos: "Igor Hagemann Sella",
     tema: "Tecnologia e Inovação",
-    resumo: "Este Projeto propõe mostrar o lado diferente da tecnologia por meio das impressões 3D",
+    resumo: "Este Projeto propõe mostrar o lado diferente da tecnologia por meio das impressões 3D.",
     imagem: "img/impressao-3d.jpeg"
   },
   {
     nome: "Marketing da Feira",
     alunos: "Carlos Henrique Fischer Fonseca",
     tema: "Marketing",
-    resumo: "Com o objetico de trazer mais pessoas para a feira, o projeto de marketing traz a moderna divulgação e o engajamento dos participantes.",
+    resumo: "Com o objetivo de trazer mais pessoas para a feira, o projeto de marketing traz a moderna divulgação e o engajamento dos participantes.",
     imagem: "img/marketing.jpeg"
   },
   {
     nome: "Site do Colégio Estadual Mendes Gonçalves",
     alunos: "Vitória Norato",
     tema: "Tecnologia e Comunicação",
-    resumo: "Este projeto visa criar um site moderno e funcional para o Colégio Estadual Mendes Gonçalves, melhorando a comunicação com alunos, pais e a comunidade.",
+    resumo: "Este projeto visa criar um site moderno e funcional para o Colégio Estadual Mendes Gonçalves, melhorando a comunicação com alunos, pais e comunidade.",
     imagem: "img/site-colegio.jpeg"
   },
   {
@@ -53,7 +53,7 @@ const PROJETOS = [
     imagem: "img/site-colegio.jpeg"
   },
   {
-    nome: "Sistema Inteligente de monitoramento e alerta de enchentes",
+    nome: "Sistema Inteligente de Monitoramento e Alerta de Enchentes",
     alunos: "Murilo Novossate de Souza",
     tema: "Tecnologia e Inovação",
     resumo: "Monitorando o nível de água em tempo real, o sistema alerta a população e autoridades sobre riscos de enchentes, contribuindo para a segurança e prevenção de desastres.",
@@ -63,7 +63,7 @@ const PROJETOS = [
     nome: "COS - TECH",
     alunos: "Maria Eduarda Gomes de Carvalho",
     tema: "Tecnologia e Inovação",
-    resumo: "O Objetivo desse projeto é desenvolver uma experiência interativa unindo tecnologia e cultura POP através da criação de um site com um minijogo temático da Hatsune Miku e da produção de Cosplay da personagem.",
+    resumo: "O objetivo desse projeto é desenvolver uma experiência interativa unindo tecnologia e cultura POP através da criação de um site com um minijogo temático da Hatsune Miku e da produção de Cosplay da personagem.",
     imagem: "img/HatsuneMiku.jpeg"
   },
   {
@@ -77,20 +77,20 @@ const PROJETOS = [
     nome: "Senha Segura",
     alunos: "Igor",
     tema: "Tecnologia e Inovação",
-    resumo: "O projeto Senha Segura é uma aplicação educativa que ensina como criar senhas mais fortes e proteger melhor as informações no ambiente digital.",
+    resumo: "O projeto 'Senha Segura' é uma aplicação educativa que ensina como criar senhas mais fortes e proteger melhor as informações no ambiente digital.",
     imagem: "img/senha-segura.jpeg"
   },
   {
     nome: "AGROBÃO",
     alunos: "Guilherme Menegazzi Gobetti",
     tema: "Tecnologia e Inovaçãos",
-    resumo: "'AGROBÃO' é um projeto que visa criar um sistema de prevenção climatica focada no agronegócio, ajudando a proteger suas colheitas e otimizar a produção.",
+    resumo: "'AGROBÃO' é um projeto que visa criar um sistema de prevenção climática focada no agronegócio, ajudando a proteger suas colheitas e otimizar a produção.",
     imagem: "img/agrobao.jpeg"
   },
   {
     nome: "Organização da Competição de Robótica",
     alunos: "Emilly Ito",
-    tema: "Tecnologia e competição",
+    tema: "Tecnologia e Competição",
     resumo: "Este projeto visa organizar e coordenar a competição de robótica da escola, garantindo uma experiência divertida e educativa para todos os participantes.",
     imagem: "img/competicao-robotica.jpeg"
   },
@@ -98,21 +98,21 @@ const PROJETOS = [
     nome: "Comunicação OFF GRID",
     alunos: "Guilherme Alves Sella da Silva",
     tema: "Tecnologia e Inovação",
-    resumo: "Explicar como funciona a comunicação off grid e demonstrar sua aplicação por meio de tecnologias de rádio, LoRa e redes mesh, utilizando o Mesh Core como exemplo.",
+    resumo: "Explicar como funciona a comunicação Off Grid e demonstrar sua aplicação por meio de tecnologias de rádio, LoRa e redes Mesh, utilizando o Mesh Core como exemplo.",
     imagem: "img/sistema-de-energia-solar-off-grid.jpeg"
   },
   {
-    nome: "Casa inteligente",
+    nome: "Casa Inteligente",
     alunos: "Felipe Falci",
     tema: "Tecnologia e Inovação",
-    resumo: "O projeto tem como objetivo demonstrar o funcionamento de recursos como um varais e janelas janelas que se recolhe automaticamente quando detecta chuva e iluminação que pode ser acionada por meio de um dispositivo remoto.",
+    resumo: "O projeto tem como objetivo demonstrar o funcionamento de recursos como varais e janelas que se recolhem automaticamente quando detectam chuva e iluminação, que podem ser acionadas por meio de um dispositivo remoto.",
     imagem: "img/casa-inteligente.jpeg"
   },
   {
     nome: "Calculadora IMC",
     alunos: "Thays Rodrigues",
     tema: "Tecnologia e Automação",
-    resumo: "O projeto busca calcular o índice de massa corporal e fazer uma tabela indicando o nível de saúde de uma pessoa, quais sãos",
+    resumo: "O projeto busca calcular o índice de massa corporal e fazer uma tabela indicando o nível de saúde de uma pessoa.",
     imagem: "img/tabela-imc.jpeg"
   },
   //{
