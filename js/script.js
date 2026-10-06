@@ -201,60 +201,71 @@ if (formInscricao) {
   document.getElementById("nome-professor").textContent = CONFIG.professor;
   const botaoContato = document.getElementById("botao-contato");
   botaoContato.href = linkWhatsapp("Olá, professor " + primeiroNome + "! Tenho uma dúvida sobre a FATECH.");
-  document.getElementById("link-regulamento").href = CONFIG.regulamento;
-  document.getElementById("link-formulario").href = CONFIG.formulario;
+  const linkRegulamento = document.getElementById("link-regulamento");
+  if (linkRegulamento) linkRegulamento.href = CONFIG.regulamento;
+  const linkFormulario = document.getElementById("link-formulario");
+  if (linkFormulario) linkFormulario.href = CONFIG.formulario;
   const botaoFormulario = document.getElementById("botao-formulario");
-  botaoFormulario.href = CONFIG.formulario;
-  
-  // Pré-visualização do logo
-  campoLogo.addEventListener("change", () => {
-    const arquivo = campoLogo.files[0];
-    if (!arquivo) {
-      previaLogo.hidden = true;
-      return;
-    }
-    const leitor = new FileReader();
-    leitor.onload = () => {
-      previaLogo.src = leitor.result;
-      previaLogo.hidden = false;
-    };
-    leitor.readAsDataURL(arquivo);
-  });
+  if (botaoFormulario) botaoFormulario.href = CONFIG.formulario;
+
+  // Pré-visualização do logo (só roda se a página tiver o campo de logo)
+  if (campoLogo) {
+    campoLogo.addEventListener("change", () => {
+      const arquivo = campoLogo.files[0];
+      if (!arquivo) {
+        previaLogo.hidden = true;
+        return;
+      }
+      const leitor = new FileReader();
+      leitor.onload = () => {
+        previaLogo.src = leitor.result;
+        previaLogo.hidden = false;
+      };
+      leitor.readAsDataURL(arquivo);
+    });
+  }
 
   // Envio do formulário: mostra o resumo e abre o WhatsApp com os dados prontos
-  formInscricao.addEventListener("submit", (evento) => {
-    evento.preventDefault();
-    const campos = formInscricao.elements;
-    const dados = [
-      ["Nome da equipe", campos["equipe"].value.trim()],
-      ["Líder da equipe", campos["lider"].value.trim()],
-      ["Responsável/Professor", campos["responsavel"].value.trim()],
-      ["Nome do robô", campos["robo"].value.trim()]
-    ];
-    const temLogo = campoLogo.files.length > 0;
+  // (só roda se o formulário ainda tiver os campos de equipe/líder/responsável/robô)
+  const campoEquipe = formInscricao.elements["equipe"];
+  if (campoEquipe) {
+    formInscricao.addEventListener("submit", (evento) => {
+      evento.preventDefault();
+      const campos = formInscricao.elements;
+      const dados = [
+        ["Nome da equipe", campos["equipe"].value.trim()],
+        ["Líder da equipe", campos["lider"].value.trim()],
+        ["Responsável/Professor", campos["responsavel"].value.trim()],
+        ["Nome do robô", campos["robo"].value.trim()]
+      ];
+      const temLogo = campoLogo && campoLogo.files.length > 0;
 
-    listaResumo.textContent = "";
-    dados.forEach(([rotulo, valor]) => {
-      listaResumo.appendChild(criar("dt", "", rotulo));
-      listaResumo.appendChild(criar("dd", "", valor));
+      listaResumo.textContent = "";
+      dados.forEach(([rotulo, valor]) => {
+        listaResumo.appendChild(criar("dt", "", rotulo));
+        listaResumo.appendChild(criar("dd", "", valor));
+      });
+      listaResumo.appendChild(criar("dt", "", "Logo"));
+      listaResumo.appendChild(criar("dd", "", temLogo ? "Selecionado (envie a imagem no WhatsApp)" : "Não enviado"));
+
+      let mensagem = "Olá, professor " + primeiroNome + "! Quero inscrever minha equipe na FATECH.\n\n";
+      dados.forEach(([rotulo, valor]) => {
+        mensagem += rotulo + ": " + valor + "\n";
+      });
+      mensagem += temLogo ? "Logo: vou enviar a imagem em seguida." : "Logo: não enviado.";
+      botaoZap.href = linkWhatsapp(mensagem);
+
+      formInscricao.hidden = true;
+      blocoResumo.hidden = false;
+      blocoResumo.scrollIntoView({ behavior: "smooth", block: "start" });
     });
-    listaResumo.appendChild(criar("dt", "", "Logo"));
-    listaResumo.appendChild(criar("dd", "", temLogo ? "Selecionado (envie a imagem no WhatsApp)" : "Não enviado"));
+  }
 
-    let mensagem = "Olá, professor " + primeiroNome + "! Quero inscrever minha equipe na FATECH.\n\n";
-    dados.forEach(([rotulo, valor]) => {
-      mensagem += rotulo + ": " + valor + "\n";
+  const botaoCorrigir = document.getElementById("corrigir");
+  if (botaoCorrigir) {
+    botaoCorrigir.addEventListener("click", () => {
+      blocoResumo.hidden = true;
+      formInscricao.hidden = false;
     });
-    mensagem += temLogo ? "Logo: vou enviar a imagem em seguida." : "Logo: não enviado.";
-    botaoZap.href = linkWhatsapp(mensagem);
-
-    formInscricao.hidden = true;
-    blocoResumo.hidden = false;
-    blocoResumo.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
-
-  document.getElementById("corrigir").addEventListener("click", () => {
-    blocoResumo.hidden = true;
-    formInscricao.hidden = false;
-  });
+  }
 }

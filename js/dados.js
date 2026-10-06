@@ -64,7 +64,7 @@ const PROJETOS = [
     alunos: "Maria Eduarda Gomes de Carvalho",
     tema: "Tecnologia e Inovação",
     resumo: "O Objetivo desse projeto é desenvolver uma experiência interativa unindo tecnologia e cultura POP através da criação de um site com um minijogo temático da Hatsune Miku e da produção de Cosplay da personagem.",
-    imagem: "img/hatsunemiku.jpeg"
+    imagem: "img/HatsuneMiku.jpeg"
   },
   {
     nome: "Achados e Perdidos",
