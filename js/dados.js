@@ -99,7 +99,7 @@ const PROJETOS = [
     alunos: "Guilherme Alves Sella da Silva",
     tema: "Tecnologia e Inovação",
     resumo: "Explicar como funciona a comunicação Off Grid e demonstrar sua aplicação por meio de tecnologias de rádio, LoRa e redes Mesh, utilizando o Mesh Core como exemplo.",
-    imagem: "img/sistema-de-energia-solar-off-grid.jpeg"
+    imagem: "img/comunicacao-off-grid.jpg"
   },
   {
     nome: "Casa Inteligente",
